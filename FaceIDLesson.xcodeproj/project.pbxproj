@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,9 @@
 		54D33C8A269D962F004312B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D33C88269D962F004312B1 /* Main.storyboard */; };
 		54D33C8C269D9630004312B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D33C8B269D9630004312B1 /* Assets.xcassets */; };
 		54D33C8F269D9630004312B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54D33C8D269D9630004312B1 /* LaunchScreen.storyboard */; };
+		54D33C97269D9DF2004312B1 /* good.json in Resources */ = {isa = PBXBuildFile; fileRef = 54D33C96269D9DF2004312B1 /* good.json */; };
+		54D33C99269D9EC9004312B1 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D33C98269D9EC9004312B1 /* LottieViewController.swift */; };
+		FF71C3A0E8A9C7A76EAC55C7 /* Pods_FaceIDLesson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36492EF26BF89907BDFCDF /* Pods_FaceIDLesson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		54D33C8B269D9630004312B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54D33C8E269D9630004312B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54D33C90269D9630004312B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D33C96269D9DF2004312B1 /* good.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = good.json; sourceTree = "<group>"; };
+		54D33C98269D9EC9004312B1 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
+		D77ECCEA0276BFDAD88A3F56 /* Pods-FaceIDLesson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceIDLesson.release.xcconfig"; path = "Target Support Files/Pods-FaceIDLesson/Pods-FaceIDLesson.release.xcconfig"; sourceTree = "<group>"; };
+		E45318266D702096BDB4A7A3 /* Pods-FaceIDLesson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceIDLesson.debug.xcconfig"; path = "Target Support Files/Pods-FaceIDLesson/Pods-FaceIDLesson.debug.xcconfig"; sourceTree = "<group>"; };
+		EF36492EF26BF89907BDFCDF /* Pods_FaceIDLesson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceIDLesson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF71C3A0E8A9C7A76EAC55C7 /* Pods_FaceIDLesson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				54D33C81269D962F004312B1 /* FaceIDLesson */,
 				54D33C80269D962F004312B1 /* Products */,
+				E28BE5240165C00E28B0307D /* Pods */,
+				75C6201D2E715FF172439C97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				54D33C82269D962F004312B1 /* AppDelegate.swift */,
 				54D33C84269D962F004312B1 /* SceneDelegate.swift */,
 				54D33C86269D962F004312B1 /* ViewController.swift */,
+				54D33C98269D9EC9004312B1 /* LottieViewController.swift */,
 				54D33C88269D962F004312B1 /* Main.storyboard */,
 				54D33C8B269D9630004312B1 /* Assets.xcassets */,
 				54D33C8D269D9630004312B1 /* LaunchScreen.storyboard */,
 				54D33C90269D9630004312B1 /* Info.plist */,
+				54D33C96269D9DF2004312B1 /* good.json */,
 			);
 			path = FaceIDLesson;
+			sourceTree = "<group>";
+		};
+		75C6201D2E715FF172439C97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF36492EF26BF89907BDFCDF /* Pods_FaceIDLesson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E28BE5240165C00E28B0307D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E45318266D702096BDB4A7A3 /* Pods-FaceIDLesson.debug.xcconfig */,
+				D77ECCEA0276BFDAD88A3F56 /* Pods-FaceIDLesson.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54D33C93269D9630004312B1 /* Build configuration list for PBXNativeTarget "FaceIDLesson" */;
 			buildPhases = (
+				9D3B7B54F0D66D1B112B0082 /* [CP] Check Pods Manifest.lock */,
 				54D33C7B269D962F004312B1 /* Sources */,
 				54D33C7C269D962F004312B1 /* Frameworks */,
 				54D33C7D269D962F004312B1 /* Resources */,
+				D6B1E18D17594AF85E4A993D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +158,54 @@
 			files = (
 				54D33C8F269D9630004312B1 /* LaunchScreen.storyboard in Resources */,
 				54D33C8C269D9630004312B1 /* Assets.xcassets in Resources */,
+				54D33C97269D9DF2004312B1 /* good.json in Resources */,
 				54D33C8A269D962F004312B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D3B7B54F0D66D1B112B0082 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceIDLesson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6B1E18D17594AF85E4A993D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceIDLesson/Pods-FaceIDLesson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FaceIDLesson/Pods-FaceIDLesson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FaceIDLesson/Pods-FaceIDLesson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54D33C7B269D962F004312B1 /* Sources */ = {
@@ -138,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54D33C87269D962F004312B1 /* ViewController.swift in Sources */,
+				54D33C99269D9EC9004312B1 /* LottieViewController.swift in Sources */,
 				54D33C83269D962F004312B1 /* AppDelegate.swift in Sources */,
 				54D33C85269D962F004312B1 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +359,7 @@
 		};
 		54D33C94269D9630004312B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E45318266D702096BDB4A7A3 /* Pods-FaceIDLesson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +378,7 @@
 		};
 		54D33C95269D9630004312B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77ECCEA0276BFDAD88A3F56 /* Pods-FaceIDLesson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
